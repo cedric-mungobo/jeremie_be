@@ -1,6 +1,6 @@
 <template>
   <section
-    class="ezy__header30 light relative overflow-hidden text-white bg-white dark:bg-[#0b1727] z-10"
+    class="ezy__header30 light relative overflow-hidden text-white bg-white  z-10"
   >
     <div
       class="ezy__header30-topbar py-36 md:py-56 bg-center bg-no-repeat bg-cover relative flex items-center justify-center z-[1]"
@@ -177,19 +177,19 @@
               </div>
 
               <div
-                class="absolute w-24 text-right right-[13%] bottom-0 text-[150px] text-blue-200 dark:text-slate-700 font-medium"
+                class="absolute w-24 text-right right-[13%] bottom-0 text-[150px] text-blue-200  font-medium"
               >
                 1
               </div>
 
               <div class="-mt-10 -translate-y-7">
                 <button
-                  class="w-10 h-10 text-[12px] bg-transparent rounded-full border border-slate-400 inline-flex justify-center items-center transition duration-300 hover:bg-slate-300 dark:hover:bg-slate-700 mr-3"
+                  class="w-10 h-10 text-[12px] bg-transparent rounded-full border border-slate-400 inline-flex justify-center items-center transition duration-300 hover:bg-slate-300  mr-3"
                 >
                   <i class="fas fa-chevron-left"></i>
                 </button>
                 <button
-                  class="w-10 h-10 text-[12px] bg-transparent rounded-full border border-slate-400 inline-flex justify-center items-center transition duration-300 hover:bg-slate-300 dark:hover:bg-slate-700"
+                  class="w-10 h-10 text-[12px] bg-transparent rounded-full border border-slate-400 inline-flex justify-center items-center transition duration-300 hover:bg-slate-300 "
                 >
                   <i class="fas fa-chevron-right"></i>
                 </button>
