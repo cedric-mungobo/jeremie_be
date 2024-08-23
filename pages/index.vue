@@ -175,7 +175,7 @@
     <section class="md:py-10">
       <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div
-          class="lg:py-14 lg:px-20 md:p-10 px-5 py-10 rounded-2xl bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-between flex-col lg:flex-row"
+          class="lg:py-14 lg:px-20 md:p-10 px-5 py-10 rounded-2xl bg-gradient-to-r from-slate-900 to-gray-600 flex items-center justify-between flex-col lg:flex-row"
         >
           <div class="block text-center mb-5 lg:text-left lg:mb-0">
             <h2
