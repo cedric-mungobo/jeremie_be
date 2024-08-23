@@ -196,9 +196,7 @@
       </div>
     </section>
 
-    <section
-      class="ezy__about12 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white"
-    >
+    <section class="ezy__about12 light py-14 md:py-24 text-zinc-900">
       <div class="container px-4">
         <div class="grid grid-cols-12 gap-5 justify-center items-center">
           <div class="col-span-12 lg:col-span-6">
