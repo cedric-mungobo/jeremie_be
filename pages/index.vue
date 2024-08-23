@@ -172,6 +172,30 @@
       </div>
     </div>
 
+    <section class="md:py-10">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div
+          class="lg:py-14 lg:px-20 md:p-10 px-5 py-10 rounded-2xl bg-gradient-to-r from-indigo-600 to-violet-600 flex items-center justify-between flex-col lg:flex-row"
+        >
+          <div class="block text-center mb-5 lg:text-left lg:mb-0">
+            <h2
+              class="font-manrope text-4xl text-white font-semibold mb-5 lg:mb-2"
+            >
+              COACHING PERSONNALISÉ
+            </h2>
+            <p class="text-xl text-indigo-100">
+              Ces deux forfaits sont conçus pour répondre aux besoins variés des
+              créateurs de contenu, allant de ceux qui débutent dans le domaine
+              à ceux qui souhaitent approfondir et monétiser leur présence en
+              ligne. Chaque forfait est accompagné d’un soutien pratique et
+              théorique, avec des avantages supplémentaires dans le Forfait
+              Intermédiaire pour une formation plus complète.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section
       class="ezy__about12 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white"
     >
