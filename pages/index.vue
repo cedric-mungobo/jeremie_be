@@ -242,7 +242,7 @@
           <div class="col-span-12 lg:col-span-6">
             <div class="flex justify-center lg:justify-start lg:ml-12">
               <img
-                src="/assets/jeremie.jpg"
+                src="assets/Jeremie.jpg"
                 alt=""
                 class="max-w-full h-auto rounded-xl"
               />
