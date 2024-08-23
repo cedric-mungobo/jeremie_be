@@ -1,12 +1,10 @@
 <template>
   <section
-    class="ezy__header30 light relative overflow-hidden text-white bg-white  z-10"
+    class="ezy__header30 light relative overflow-hidden text-white bg-white z-10"
   >
     <div
       class="ezy__header30-topbar py-36 md:py-56 bg-center bg-no-repeat bg-cover relative flex items-center justify-center z-[1]"
-      style="
-        background-image: url(https://cdn.easyfrontend.com/pictures/contents/contents-banner.jpg);
-      "
+      style="background-image: url(/assets/Couverture.jpg)"
     >
       <div
         class="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-60 -z-10"
@@ -31,169 +29,199 @@
       </div>
     </div>
     <!-- courses carousel -->
-    <div class="container px-4 mx-auto mb-2 -mt-28 md:-mt-48">
-      <div class="z-10 relative mt-12">
-        <div class="grid grid-cols-6 gap-x-6">
-          <!-- card item -->
-          <div class="col-span-6 md:col-span-2">
-            <div class="rounded-lg overflow-hidden mt-6 lg:mt-0">
-              <div class="relative">
-                <img
-                  src="https://cdn.easyfrontend.com/pictures/featured/featured_10_1.png"
-                  alt=""
-                  class="w-full rounded-b-xl"
-                />
-                <div
-                  class="absolute bottom-0 flex flex-col justify-center items-center w-full text-white px-12 pb-6 text-center"
-                >
-                  <h4 class="text-[22px] leading-none font-medium mb-0">
-                    Technology
-                  </h4>
-                  <p class="opacity-75 mb-4">17 courses</p>
-                  <NuxtLink
-                    to="/details"
-                    class="bg-blue-600 hover:bg-opacity-90 text-white py-3 rounded duration-300 px-9 mb-3"
-                    >View All</NuxtLink
-                  >
-                </div>
-              </div>
+    <div class="container px-4 mx-auto mb-2 -mt-36 md:-mt-48">
+      <div class="z-10 relative mt-1">
+        <section class="py-2 text-gray-100">
+          <div class="container md:px-4 px-2 mx-auto">
+            <div class="max-w-4xl mx-auto mb-6 text-center">
+              <h2 class="text-2xl font-bold md:text-5xl">
+                Choisissez le forfait de formation qui vous convient le mieux !
+              </h2>
             </div>
-          </div>
-          <!-- card item -->
-          <div class="col-span-6 md:col-span-2">
-            <div class="rounded-lg overflow-hidden mt-6 lg:mt-0">
-              <div class="relative">
-                <img
-                  src="https://cdn.easyfrontend.com/pictures/featured/featured_10_2.png"
-                  alt=""
-                  class="w-full roulg"
-                />
+            <div class="flex flex-wrap items-stretch -mx-4">
+              <div class="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/2 lg:mb-0">
                 <div
-                  class="absolute bottom-0 flex flex-col justify-center items-center w-full text-white px-12 pb-6 text-center"
+                  class="flex flex-grow flex-col p-6 space-y-6 rounded-xl shadow-md sm:p-8 bg-gray-400 text-black"
                 >
-                  <h4 class="text-[22px] leading-none font-medium mb-0">
-                    Marketing
-                  </h4>
-                  <p class="opacity-75 mb-4">22 courses</p>
-                  <NuxtLink
-                    to="/details"
-                    class="bg-blue-600 hover:bg-opacity-90 text-white py-3 rounded duration-300 px-9 mb-3"
-                    >View All</NuxtLink
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- card item -->
-          <div class="col-span-6 md:col-span-2">
-            <div class="rounded-lg overflow-hidden mt-6 lg:mt-0">
-              <div class="relative">
-                <img
-                  src="https://cdn.easyfrontend.com/pictures/featured/featured_10_4.png"
-                  alt=""
-                  class="w-full"
-                />
-                <div
-                  class="absolute bottom-0 flex flex-col justify-center items-center w-full text-white px-12 pb-6 text-center"
-                >
-                  <h4 class="text-[22px] leading-none font-medium mb-0">
-                    Designing
-                  </h4>
-                  <p class="opacity-75 mb-4">09 courses</p>
-                  <NuxtLink
-                    to="/details"
-                    class="bg-blue-600 hover:bg-opacity-90 text-white py-3 rounded duration-300 px-9 mb-3"
-                    >View All</NuxtLink
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                  <div class="space-y-1">
+                    <h4 class="text-2xl font-bold">Forfait</h4>
+                    <span class="text-4xl font-bold">Découverte</span>
+                  </div>
+                  <p class="mt-0 leading-relaxed text-gray-800">
+                    {{ package1.time }}
+                  </p>
+                  <span class="p-0"
+                    >Début de la séance : Ce 01 septembre 2024
+                  </span>
+                  <ul class="flex-1 mb-6 text-gray-800">
+                    <li
+                      class="flex mb-2 space-x-2"
+                      v-for="(item, i) in package1.contenu"
+                      :key="i"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="flex-shrink-0 w-6 h-6 text-gray-800"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                      <span>{{ item }}</span>
+                    </li>
+                    <span class="mb-2"> Inclus </span>
 
-        <button
-          class="w-12 h-12 text-[22px] bg-blue-600 bg-opacity-70 hover:bg-opacity-100 text-white rounded-full absolute top-2/4 -left-6 -translate-y-1/2 transition"
-        >
-          <i class="fas fa-angle-left"></i>
-        </button>
-        <button
-          class="w-12 h-12 text-[22px] bg-blue-600 bg-opacity-70 hover:bg-opacity-100 text-white rounded-full absolute top-2/4 -right-6 -translate-y-1/2 transition"
-        >
-          <i class="fas fa-angle-right"></i>
-        </button>
+                    <li
+                      class="flex mb-2 space-x-2"
+                      v-for="(item, i) in package1.inclus"
+                      :key="i"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="flex-shrink-0 w-6 h-6 text-gray-800"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                      <span>{{ item }}</span>
+                    </li>
+                  </ul>
+                  <button
+                    type="button"
+                    class="inline-block px-5 py-3 font-semibold tracking-wider text-center rounded-lg bg-gradient-to-r from-black to-slate-800 text-gray-100"
+                  >
+                    Optez pour votre formation
+                  </button>
+                </div>
+              </div>
+              <div class="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/2 lg:mb-0">
+                <div
+                  class="flex flex-grow flex-col p-6 space-y-6 rounded-xl shadow sm:p-8 bg-gradient-to-r from-black to-slate-800 text-gray-100"
+                >
+                  <div class="space-y-2">
+                    <h4 class="text-2xl font-bold">Forfait</h4>
+                    <span class="text-4xl font-bold">Intermédiaire </span>
+                  </div>
+                  <p class="leading-relaxed">
+                    {{ package2.time }}
+                  </p>
+                  <p class="p-0">Début de la séance : Ce 01 septembre 2024</p>
+                  <ul class="flex-1 space-y-2">
+                    <li
+                      class="flex mb-2 space-x-2"
+                      v-for="(item, i) in package2.contenu"
+                      :key="i"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="flex-shrink-0 w-6 h-6 text-gray-100"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                      <span>{{ item }}</span>
+                    </li>
+
+                    <p>Inclus</p>
+
+                    <li
+                      class="flex mb-2 space-x-2"
+                      v-for="(item, i) in package2.inclus"
+                      :key="i"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="flex-shrink-0 w-6 h-6 text-gray-100"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                      <span>{{ item }}</span>
+                    </li>
+                  </ul>
+                  <a
+                    rel="noopener noreferrer"
+                    href="#"
+                    class="inline-block w-full px-5 py-3 font-bold tracking-wider text-center rounded-lg bg-gray-300 text-gray-900"
+                    >Optez pour votre formation
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
 
     <section
-      class="ezy__team8 light bg-slate-100 text-zinc-900 overflow-hidden"
+      class="ezy__about12 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white"
     >
-      <div class="ezy__team8-list">
-        <div class="container px-4 mx-auto">
-          <div class="flex flex-col md:flex-row">
-            <div class="w-full md:w-1/2 md:order-2">
-              <div
-                class="bg-center bg-no-repeat bg-cover min-h-[250px] w-full md:w-[50vw] h-full"
-                style="
-                  background-image: url(https://cdn.easyfrontend.com/pictures/team/team_8.png);
-                "
-              ></div>
-            </div>
-            <div class="w-full md:w-1/2 relative">
-              <div class="pt-12 pb-28 md:py-24 lg:py-48 lg:pr-24">
-                <h4 class="font-medium text-2xl mb-1">Raima Ray</h4>
-                <p class="mb-6">Business Head</p>
-
-                <p class="opacity-50 mb-0 leading-7">
-                  It’s easier to reach your savings goals when you have the
-                  right savings account. Take a look and find the right one for
-                  you.It’s easier to reach your savings goals when you have the
-                  right savings account. Take a look and find the right one for
-                  youIt’s easier to reach your savings goals when you have the
-                  right savings account. Take a look and find the right one for
-                  you!
-                </p>
-                <div class="mt-6">
-                  <NuxtLink
-                    to="/details"
-                    class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
-                    ><span class="fab fa-facebook-f"></span
-                  ></NuxtLink>
-                  <a
-                    href="#"
-                    class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
-                    ><span class="fab fa-linkedin-in"></span
-                  ></a>
-                  <a
-                    href="#"
-                    class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
-                    ><span class="fab fa-twitter"></span
-                  ></a>
-                  <a
-                    href="#"
-                    class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100"
-                    ><span class="fab fa-behance"></span
-                  ></a>
-                </div>
-              </div>
-
-              <div
-                class="absolute w-24 text-right right-[13%] bottom-0 text-[150px] text-blue-200  font-medium"
+      <div class="container px-4">
+        <div class="grid grid-cols-12 gap-5 justify-center items-center">
+          <div class="col-span-12 lg:col-span-6">
+            <div class="lg:px-7">
+              <h1
+                class="uppercase text-2xl md:text-4xl leading-tight font-medium mb-2"
               >
-                1
-              </div>
-
-              <div class="-mt-10 -translate-y-7">
-                <button
-                  class="w-10 h-10 text-[12px] bg-transparent rounded-full border border-slate-400 inline-flex justify-center items-center transition duration-300 hover:bg-slate-300  mr-3"
-                >
-                  <i class="fas fa-chevron-left"></i>
-                </button>
-                <button
-                  class="w-10 h-10 text-[12px] bg-transparent rounded-full border border-slate-400 inline-flex justify-center items-center transition duration-300 hover:bg-slate-300 "
-                >
-                  <i class="fas fa-chevron-right"></i>
-                </button>
-              </div>
+                JEREMIE B. ELONGA (Jeremie Be)
+              </h1>
+              <p class="text-lg leading-normal opacity-75 my-6">
+                Jeremie Be est un passionné de l'image et du business en général
+                depuis 2011, lorsqu'il s'est lancé dans la photographie et la
+                vidéo. Aujourd'hui, il possède une société de production en RDC,
+                Beprogroupe, qui lui a permis de travailler avec plusieurs
+                entreprises nationales et multinationales.
+              </p>
+              <p class="text-lg leading-normal opacity-75 my-6">
+                En plus de cela, Jeremie Be a créé BEART, une galerie d'art qui
+                a généré un chiffre d'affaires de plus de 30 000 $ depuis 2022 .
+                En 2020, il a décidé de faire découvrir son pays, la RDC, en
+                voyageant à travers plus de 20 provinces pour y créer des
+                documentaires.
+              </p>
+              <p class="text-lg leading-normal opacity-75 my-6">
+                En plus de cela, Jeremie Be a créé BEART, une galerie d'art qui
+                a généré un chiffre d'affaires de plus de 30 000 $ depuis 2022 .
+                En 2020, il a décidé de faire découvrir son pays, la RDC, en
+                voyageant à travers plus de 20 provinces pour y créer des
+                documentaires.
+              </p>
+              <p class="text-lg leading-normal opacity-75 my-6">
+                En 2023, il s'est lancé comme YouTubeur, et sa chaîne lui permet
+                de gagner entre 800 $ et 1 000 $ par mois. Aujourd'hui, il
+                continue de développer son projet "Made in Africa", qui valorise
+                la culture africaine. Jeremie Be a déjà voyagé dans plusieurs
+                pays africains tels que la Côte d'Ivoire, le Rwanda, la Zambie,
+                le Congo-Brazzaville et le Gabon.
+              </p>
+            </div>
+          </div>
+          <div class="col-span-12 lg:col-span-6">
+            <div class="flex justify-center lg:justify-start lg:ml-12">
+              <img
+                src="/assets/jeremie.jpg"
+                alt=""
+                class="max-w-full h-auto rounded-xl"
+              />
             </div>
           </div>
         </div>
@@ -203,5 +231,31 @@
 </template>
 
 <script lang="ts" setup>
+const package1 = {
+  time: " 4 séances (2 heures par séance) / 2 séances par semaine",
+  contenu: [
+    "Introduction à la Création de Contenu",
+    "Stratégie de Contenu qui Marche sur les Réseaux Sociaux",
+    "Personal Branding",
+    "Parler Devant sa Caméra avec Confiance",
+    "Création de Contenu sur YouTube",
+    "Création de Contenu sur Instagram",
+    "Création de Contenu sur Facebook",
+    "Création de votre Kit Média",
+  ],
+  inclus: ["Accès aux supports PDF", "Session de Q&A de 30 minutes"],
+};
+const package2 = {
+  time: " 8 séances (2 heures par séance) / 2 séances par semaine",
+  contenu: [
+    "Tous les modules du Forfait Découverte",
+    "Monétiser son Instagram et Facebook",
+    "Gestion et Planification de Contenu",
+    "Analyse des Résultats et Optimisation",
+    "Utilisation de Matériel (équipements & logiciels)",
+    "Création de votre Kit Média (approfondi)",
+  ],
+  inclus: ["Accès aux supports PDF", "Session de Q & A de 1 heure"],
+};
 </script>
 
