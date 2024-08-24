@@ -11,7 +11,7 @@
       ></div>
       <div class="container px-4 mx-auto">
         <header
-          class="flex items-center justify-center px-10 top-0 absolute w-full mx-auto py-2"
+          class="flex items-center justify-center px-10 top-0 left-0 absolute w-full mx-auto py-2 md:py-10"
         >
           <nav class="flex flex-1 max-w-5xl justify-between items-center">
             <a
@@ -23,7 +23,7 @@
             <ul class="flex items-center gap-3">
               <li>
                 <button
-                  class="md:w-10 md:h-10 flex items-center justify-center relative overflow-hidden rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300"
+                  class="md:w-7 md:h-7 flex items-center justify-center relative overflow-hidden rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300"
                 >
                   <svg
                     class="relative z-10 fill-gray-900 transition-all duration-300 group-hover:fill-white"
@@ -45,7 +45,7 @@
               </li>
               <li>
                 <button
-                  class="md:w-10 md:h-10 flex items-center relative overflow-hidden justify-center rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300"
+                  class="md:w-7 md:h-7 flex items-center relative overflow-hidden justify-center rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300"
                 >
                   <svg
                     class="fill-gray-900 relative z-10 transition-all duration-300 group-hover:fill-white"
@@ -67,7 +67,7 @@
               </li>
               <li>
                 <button
-                  class="md:w-10 md:h-10 flex items-center relative overflow-hidden justify-center rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300"
+                  class="md:w-7 md:h-7 flex items-center relative overflow-hidden justify-center rounded-full bg-white shadow-md shadow-gray-200 group transition-all duration-300"
                 >
                   <svg
                     class="fill-gray-900 relative z-10 transition-all duration-300 group-hover:fill-white"
@@ -106,7 +106,7 @@
               <div class="text-center">
                 <p class="md:text-xl text-sm opacity-80 leading-snug">
                   COACHING PERSONNALISÉ est une formation d'accompagnement 100%
-                  en ligne, créée par Jeremie Be.
+                  en ligne, créée par Jeremiebe.
                 </p>
               </div>
             </div>
