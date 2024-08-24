@@ -104,9 +104,9 @@
             </h1>
             <div class="max-w-lg flex justify-center mx-auto">
               <div class="text-center">
-                <p class="text-xl opacity-80 leading-snug">
+                <p class="md:text-xl text-sm opacity-80 leading-snug">
                   COACHING PERSONNALISÉ est une formation d'accompagnement 100%
-                  en ligne, créée par Jeremie B.
+                  en ligne, créée par Jeremie Be.
                 </p>
               </div>
             </div>
@@ -176,14 +176,27 @@
                       </svg>
                       <span>{{ item }}</span>
                     </li>
+                    <li class="flex mb-2 space-x-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="flex-shrink-0 w-6 h-6 text-gray-100"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                      <span> {{ package1.time }}</span>
+                    </li>
                   </ul>
 
-                  <span class="p-0"
+                  <!-- <span class="p-0"
                     >Début de la séance : Ce 01 septembre 2024
-                  </span>
-                  <p class="mt-0 leading-relaxed text-gray-100">
-                    {{ package1.time }}
-                  </p>
+                  </span> -->
+
                   <button
                     type="button"
                     class="inline-block px-5 py-3 font-semibold tracking-wider text-center rounded-lg bg-white text-gray-900"
@@ -245,12 +258,24 @@
                       </svg>
                       <span>{{ item }}</span>
                     </li>
+                    <li class="flex mb-2 space-x-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        class="flex-shrink-0 w-6 h-6 text-gray-100"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                      <span> {{ package2.time }}</span>
+                    </li>
                   </ul>
 
-                  <p class="leading-relaxed">
-                    {{ package2.time }}
-                  </p>
-                  <p class="p-0">Début de la séance : Ce 01 septembre 2024</p>
+                  <!-- <p class="p-0">Début de la séance : Ce 01 septembre 2024</p> -->
                   <a
                     rel="noopener noreferrer"
                     href="#"
@@ -267,10 +292,10 @@
       </div>
     </div>
 
-    <section class="md:py-10">
-      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <section class="md:py-5">
+      <div class="w-full">
         <div
-          class="lg:py-14 lg:px-20 md:p-10 px-5 py-10 rounded-2xl bg-gradient-to-r from-slate-900 to-gray-600 flex items-center justify-between flex-col lg:flex-row"
+          class="lg:py-14 lg:px-20 md:p-10 px-5 py-10 bg-gradient-to-r from-slate-900 to-gray-600 flex items-center justify-between flex-col lg:flex-row"
         >
           <div class="block text-center mb-5 lg:text-left lg:mb-0">
             <h2
@@ -291,18 +316,22 @@
       </div>
     </section>
 
-    <section class="ezy__about12 light py-14 md:py-24 text-zinc-900">
+    <section class="ezy__about12 light text-zinc-900 flex">
       <div class="container px-4">
-        <div class="grid grid-cols-12 gap-5 justify-center items-center">
+        <div
+          class="grid grid-cols-12 gap-5 justify-center items-center max-w-6xl mx-auto"
+        >
           <div class="col-span-12 lg:col-span-6">
             <div class="lg:px-7">
               <h1
-                class="uppercase text-2xl md:text-4xl leading-tight font-medium mb-2"
+                class="uppercase text-2xl md:text-3xl leading-tight font-medium mb-2 mt-[5rem]"
               >
-                JEREMIE B. ELONGA (Jeremie Be)
+                JEREMIE B. ELONGA
               </h1>
-              <p class="text-lg leading-normal opacity-75 my-6">
-                Jeremie Be est un passionné de l'image et du business en général
+              <p
+                class="text-lg leading-normal opacity-75 my-6 whitespace-break-spaces"
+              >
+                Jeremiebe est un passionné de l'image et du business en général
                 depuis 2011, lorsqu'il s'est lancé dans la photographie et la
                 vidéo. Aujourd'hui, il possède une société de production en RDC,
                 Beprogroupe, qui lui a permis de travailler avec plusieurs
@@ -333,7 +362,7 @@
             </div>
           </div>
           <div class="col-span-12 lg:col-span-6">
-            <div class="flex justify-center lg:justify-start lg:ml-12">
+            <div class="">
               <img
                 src="/assets/Jeremie.jpg"
                 alt=""
